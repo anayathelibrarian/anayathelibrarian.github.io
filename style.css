@@ -19,7 +19,7 @@
   h2{font-size:1.7rem; color:var(--garlic); margin-bottom:6px;}
   h3{font-size:1.05rem; color:var(--garlic); margin-bottom:18px;}
   a:link, a:visited {color: #A692C3; font-weight: bold;}
-  a:hover, a:active, a:focus {color: #78AB82; border: 1px solid #78AB82;}
+  a:hover, a:active, a:focus {color: #78AB82;}
   .eyebrow{text-transform:uppercase; letter-spacing:3px; font-size:0.72rem; color:var(--blood-bright); font-weight:600; margin-bottom:10px;}
   .section{margin-top:84px;}
   .section-intro{max-width:680px; color:var(--text-dim); margin-bottom:32px; font-size:0.97rem;}
