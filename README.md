@@ -1,2 +1,2 @@
 # anayathelibrarian.github.io
-homepage
+a place to keep my weird projects together. 
