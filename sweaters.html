@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graveyard &amp; Boneyard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #160f0c;
+    --bg-vignette: radial-gradient(ellipse at 50% -10%, #271a15 0%, #160f0c 55%);
+    --paper: #e8dcc0;
+    --paper-dim: #b8a98a;
+    --brass: #a8643f;
+    --brass-bright: #c98657;
+    --wine: #7c2530;
+    --wine-bright: #b8434c;
+    --hair: rgba(168,100,63,0.24);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg-vignette), var(--bg);
+    color:var(--paper);
+    font-family:'EB Garamond', serif;
+    font-size:19px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{
+    color:var(--brass-bright);
+    margin:0;
+  }
+  h2{
+    font-family:'Cormorant Garamond', serif;
+  }
+  a{color:var(--brass-bright); text-decoration-color:rgba(215,172,87,0.4); text-underline-offset:3px;}
+  a:hover{color:var(--wine-bright); text-decoration-color:rgba(184,67,76,0.5);}
+
+  .wrap{max-width:720px; margin:0 auto; padding:64px 24px 80px;}
+
+  header.hero{text-align:center; margin-bottom:8px;}
+  header.hero h1{
+    font-family:'Special Elite', cursive;
+    font-size:clamp(1.8rem, 5.5vw, 2.5rem);
+    font-weight:400;
+    letter-spacing:0.5px;
+  }
+  header.hero .subtitle{
+    font-style:italic;
+    color:var(--paper-dim);
+    font-size:1.05rem;
+    margin:10px 0 0;
+    max-width:520px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .back-link{
+    display:block;
+    text-align:center;
+    font-style:italic;
+    font-size:0.9rem;
+    margin-bottom:28px;
+  }
+  .ornament{
+    width:110px; height:1px;
+    background:linear-gradient(90deg, transparent, var(--brass), transparent);
+    margin:28px auto;
+  }
+
+  section{margin:64px 0;}
+  section h2{
+    font-size:1.9rem;
+    font-style:italic;
+    font-weight:600;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--hair);
+    margin-bottom:8px;
+  }
+  section > .note{
+    color:var(--paper-dim);
+    font-size:0.95rem;
+    font-style:italic;
+    margin:0 0 24px;
+  }
+  section p{margin:0 0 10px;}
+
+  .chart-grid{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+  }
+  .chart-grid figure{
+    margin:0;
+    background:rgba(232,220,192,0.04);
+    border:1px solid var(--hair);
+    padding:10px;
+    flex:1 1 200px;
+  }
+  .chart-grid a{display:block; line-height:0;}
+  .chart-grid img{
+    display:block;
+    width:100%;
+    height:auto;
+    cursor:zoom-in;
+  }
+  .chart-grid figcaption{
+    font-style:italic;
+    color:var(--paper-dim);
+    font-size:0.82rem;
+    text-align:center;
+    margin-top:8px;
+  }
+
+  .final-photo{
+    background:rgba(232,220,192,0.04);
+    border:1px solid var(--hair);
+    padding:14px 14px 18px;
+    max-width:420px;
+    margin:0 auto 28px;
+  }
+  .final-photo a{display:block; line-height:0;}
+  .final-photo img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .final-photo figcaption{
+    font-style:italic;
+    color:var(--paper-dim);
+    font-size:0.85rem;
+    text-align:center;
+    margin-top:10px;
+  }
+
+  footer{
+    margin-top:72px;
+    padding-top:22px;
+    border-top:1px solid var(--hair);
+    text-align:center;
+    font-style:italic;
+    font-size:0.85rem;
+    color:var(--paper-dim);
+  }
+
+  @media (max-width: 480px){
+    body{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="/index.html">&larr; back to Stitches, Stories, and Spreadsheets</a>
+
+    <header class="hero">
+      <h1>Graveyard &amp; Boneyard</h1>
+      <p class="subtitle">Two complementary colorwork sweaters, one for me and one for my dog. Not a full written pattern &mdash; just the charts, for anyone who wants to work them into a pattern of their own or make it up as they go, the way I did.</p>
+    </header>
+    <div class="ornament"></div>
+
+    <section>
+      <h2>Graveyard</h2>
+      <p class="note">Mine. Worked flat, colorwork on the body and both sleeves.</p>
+      <figure class="final-photo">
+        <a href="/GraveyardDesi.jpg" target="_blank" rel="noopener">
+          <img src="/GraveyardDesi.jpg" alt="Finished Graveyard sweater, worn">
+        </a>
+        <figcaption>The finished sweater</figcaption>
+      </figure>
+      <div class="chart-grid">
+        <figure>
+          <a href="/Graveyard.png" target="_blank" rel="noopener">
+            <img src="/Graveyard.png" alt="Graveyard sweater body colorwork chart">
+          </a>
+          <figcaption>Body chart</figcaption>
+        </figure>
+        <figure>
+          <a href="/GraveyardSleeve1.png" target="_blank" rel="noopener">
+            <img src="/GraveyardSleeve1.png" alt="Graveyard sweater sleeve one colorwork chart">
+          </a>
+          <figcaption>Sleeve chart, one</figcaption>
+        </figure>
+        <figure>
+          <a href="/GraveyardSleeve2.png" target="_blank" rel="noopener">
+            <img src="/GraveyardSleeve2.png" alt="Graveyard sweater sleeve two colorwork chart">
+          </a>
+          <figcaption>Sleeve chart, two</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Boneyard</h2>
+      <p class="note">Moxxi's. The matching companion piece to Graveyard.</p>
+      <figure class="final-photo">
+        <a href="/BoneyardMoxxi.jpg" target="_blank" rel="noopener">
+          <img src="/BoneyardMoxxi.jpg" alt="Moxxi wearing the finished Boneyard sweater">
+        </a>
+        <figcaption>Moxxi, modeling</figcaption>
+      </figure>
+      <div class="chart-grid">
+        <figure>
+          <a href="/Boneyard.png" target="_blank" rel="noopener">
+            <img src="/Boneyard.png" alt="Boneyard sweater colorwork chart">
+          </a>
+          <figcaption>Colorwork chart</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <p>Charts are mine to share &mdash; credit appreciated, no need to ask.</p>
+    </footer>
+  </div>
+</body>
+</html>
