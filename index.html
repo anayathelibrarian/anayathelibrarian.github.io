@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Page of Anaya's Own</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="/style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Page of Anaya's Own</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #160f0c;
+    --bg-vignette: radial-gradient(ellipse at 50% -10%, #271a15 0%, #160f0c 55%);
+    --paper: #e8dcc0;
+    --paper-dim: #b8a98a;
+    --brass: #a8643f;
+    --brass-bright: #c98657;
+    --wine: #7c2530;
+    --wine-bright: #b8434c;
+    --hair: rgba(168,100,63,0.24);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg-vignette), var(--bg);
+    color:var(--paper);
+    font-family:'EB Garamond', serif;
+    font-size:19px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{
+    color:var(--brass-bright);
+    margin:0;
+  }
+  h2{
+    font-family:'Cormorant Garamond', serif;
+  }
+  a{color:var(--brass-bright); text-decoration-color:rgba(215,172,87,0.4); text-underline-offset:3px;}
+  a:hover{color:var(--wine-bright); text-decoration-color:rgba(184,67,76,0.5);}
+
+  .wrap{max-width:640px; margin:0 auto; padding:64px 24px 80px;}
+
+  header.hero{text-align:center; margin-bottom:8px;}
+  header.hero h1{
+    font-family:'Caveat', cursive;
+    font-size:clamp(3.2rem, 10vw, 4.6rem);
+    font-weight:700;
+  }
+  header.hero .subtitle{
+    font-style:italic;
+    color:var(--paper-dim);
+    font-size:1.05rem;
+    margin:10px 0 0;
+  }
+  .ornament{
+    width:110px; height:1px;
+    background:linear-gradient(90deg, transparent, var(--brass), transparent);
+    margin:28px auto;
+  }
+
+  section{margin:52px 0;}
+  section h2{
+    font-size:1.7rem;
+    font-style:italic;
+    font-weight:600;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--hair);
+    margin-bottom:16px;
+  }
+  section p{margin:0 0 10px;}
+  section ul{margin:0; padding-left:1.2em;}
+  section li{margin-bottom:8px;}
+
+  .snapshots{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+  .snapshots figure{
+    margin:0;
+    background:rgba(232,220,192,0.04);
+    border:1px solid var(--hair);
+    padding:10px 10px 14px;
+    max-width:260px;
+  }
+  .snapshots img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .snapshots figcaption{
+    font-style:italic;
+    color:var(--paper-dim);
+    font-size:0.85rem;
+    text-align:center;
+    margin-top:8px;
+  }
+
+  .census-list{list-style:none; padding:0; margin:0;}
+  .census-list li{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    padding:9px 0;
+    border-bottom:1px solid var(--hair);
+  }
+  .census-list li:last-child{border-bottom:none;}
+  .census-list .year{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:600;
+    color:var(--brass);
+    min-width:3.2em;
+  }
+
+  footer{
+    margin-top:72px;
+    padding-top:22px;
+    border-top:1px solid var(--hair);
+    text-align:center;
+    font-style:italic;
+    font-size:0.85rem;
+    color:var(--paper-dim);
+  }
+
+  @media (max-width: 480px){
+    body{font-size:17px;}
+  }
+</style>
 </head>
 <body>
   <div class="wrap">
@@ -15,29 +138,50 @@
       <h1>A Page of Anaya's Own</h1>
       <p class="subtitle">A small corner of the internet to collect my weird projects.</p>
     </header>
-    <section class="section">
-    <h2>Opinions</h2>
+    <div class="ornament"></div>
+
+    <section>
+      <h2>Opinions</h2>
       <p><a href="https://anayathelibrarian.github.io/vampires/">Anaya's Opinions about Vampire Movies</a></p>
     </section>
-      <section class="section">
-    <h2>Fiber</h2>
+
+    <section>
+      <h2>Fiber</h2>
       <p><a href="https://www.ravelry.com/projects/Chaoskilled?set=&page=&search=&sort=completed_%20status_changed_&view=thumbnail">Anaya's Ravelry</a></p>
     </section>
-    <section class="section">
-      <img src="/mandm.jpg" width="400px" alt="Two brown dogs panting gently in the direction of the camera"><br />
-      <img src="/brunswick.jpg"  width="400px" alt="river view from a bridge">
-    </section>
-    <section class="section"
-      <ul><li></li><a href="https://bit.ly/3Lk8MJF">Westside Drive Halloween Census 2025</a></li>
-    <li><a href="https://docs.google.com/document/d/1Q7zSAWOFOMytdC0Zk9j9wb2eWmK0N-Uw/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Westside Drive Halloween Census 2024</a></li>
-    <li><a href="https://docs.google.com/document/d/1wQSYMVZrXZCcUHQR8rzHA2CeF3y_D_RY/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Westside Drive Halloween Census 2023</a></li>
-    <li><a href="https://docs.google.com/document/d/1N2kXE_tIPQ-rsgtsKq5hAWvGi10Hs6hn/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Westside Drive Halloween Census 2022</a></li></ul></section>
-  </div>
-  <footer>
-    
-  </footer>
 
-  
+    <section>
+      <h2>Snapshots</h2>
+      <div class="snapshots">
+        <figure>
+          <img src="/mandm.jpg" alt="Two brown dogs panting gently in the direction of the camera">
+          <figcaption>M &amp; M</figcaption>
+        </figure>
+        <figure>
+          <img src="/brunswick.jpg" alt="River view from a bridge">
+          <figcaption>Brunswick, from the bridge</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Stories</h2>
+      <p><a href="https://anayathelibrarian.github.io/Ragnabark/">Ragnabark</a></p>
+    </section>
+
+    <section>
+      <h2>Westside Drive Halloween Census</h2>
+      <ul class="census-list">
+        <li><span class="year">2025</span> <a href="https://bit.ly/3Lk8MJF">Read the census</a></li>
+        <li><span class="year">2024</span> <a href="https://docs.google.com/document/d/1Q7zSAWOFOMytdC0Zk9j9wb2eWmK0N-Uw/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Read the census</a></li>
+        <li><span class="year">2023</span> <a href="https://docs.google.com/document/d/1wQSYMVZrXZCcUHQR8rzHA2CeF3y_D_RY/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Read the census</a></li>
+        <li><span class="year">2022</span> <a href="https://docs.google.com/document/d/1N2kXE_tIPQ-rsgtsKq5hAWvGi10Hs6hn/edit?usp=sharing&ouid=113603874757150662007&rtpof=true&sd=true">Read the census</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Updated as the projects pile up.</p>
+    </footer>
+  </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+</html>
